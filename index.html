@@ -1370,5 +1370,124 @@
       }
     })();
   </script>
+
+  <!-- Modal de Downsell Exclusivo (R$ 18,90) - Só abre se clicou no checkout e voltou -->
+  <div id="modalDescontoSaida" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-xs transition-opacity duration-300">
+    <div class="relative bg-white rounded-3xl p-6 sm:p-7 max-w-sm w-full text-center shadow-2xl border border-rose-200 animate-in fade-in zoom-in-95">
+      <!-- Botão Fechar discreto -->
+      <button onclick="fecharModalDesconto()" class="absolute top-4 right-4 text-neutral-400 hover:text-neutral-700 w-8 h-8 flex items-center justify-center rounded-full bg-neutral-100 hover:bg-neutral-200 transition-colors cursor-pointer">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Badge Alerta -->
+      <div class="inline-flex items-center gap-1.5 bg-rose-100 border border-rose-200 text-roseaccent text-xs font-bold uppercase px-3 py-1 rounded-full mb-3">
+        <span>🚨</span> Condição Especial de Saída
+      </div>
+
+      <h3 class="font-serif text-2xl font-bold text-ink mb-1.5">
+        Espere! Não vá embora sem sua vaga...
+      </h3>
+      
+      <p class="text-xs text-neutral-600 mb-4 leading-relaxed">
+        Liberamos um cupom de incentivo exclusivo para você começar a faturar com unhas hoje mesmo:
+      </p>
+
+      <!-- Card do Preço Promocional -->
+      <div class="bg-gradient-to-b from-rosesoft to-rose-50 border border-rose-200 rounded-2xl p-4 mb-4">
+        <div class="text-neutral-500 text-xs line-through">De R$ 24,90 por apenas</div>
+        <div class="text-3xl font-extrabold text-emerald-600 my-1">
+          R$ 18,90
+        </div>
+        <div class="text-[11px] font-semibold text-neutral-700 bg-white/80 rounded-lg py-1 px-2 border border-rose-100 inline-block">
+          ✦ Método Completo + 10 Certificados + App NailAgenda
+        </div>
+      </div>
+
+      <!-- Botão de Ação -->
+      <a id="btnCheckoutDesconto" href="https://pay.wiapy.com/HtEjnLi4E8st" class="btn-apple-cta block w-full py-3.5 rounded-2xl text-white font-bold text-sm shadow-lg shadow-roseaccent/25 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer">
+        QUERO APROVEITAR POR R$ 18,90
+      </a>
+
+      <button onclick="fecharModalDesconto()" class="block w-full text-[11px] text-neutral-400 hover:text-neutral-600 underline mt-3 cursor-pointer">
+        Não quero, prefiro perder essa oportunidade
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Gerenciamento do Modal de Downsell (R$ 18,90)
+    // GARANTIA: NUNCA aparece antes de clicar no checkout!
+    const MODAL_DOWNSELL_ID = 'modalDescontoSaida';
+    const BTN_CHECKOUT_PROMO = document.getElementById('btnCheckoutDesconto');
+
+    function abrirModalDesconto() {
+      if (sessionStorage.getItem('usuario_clicou_checkout') === 'true' && !sessionStorage.getItem('downsell_exibido')) {
+        const modal = document.getElementById(MODAL_DOWNSELL_ID);
+        if (modal) {
+          const promoBtn = document.getElementById('btnCheckoutDesconto');
+          if (promoBtn) {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.toString()) {
+              try {
+                const dest = new URL(promoBtn.href);
+                urlParams.forEach((v, k) => dest.searchParams.set(k, v));
+                if (!dest.searchParams.has('src') && urlParams.has('utm_source')) {
+                  dest.searchParams.set('src', urlParams.get('utm_source'));
+                }
+                promoBtn.href = dest.toString();
+              } catch(e) {}
+            }
+          }
+          modal.classList.remove('hidden');
+          sessionStorage.setItem('downsell_exibido', 'true');
+        }
+      }
+    }
+
+    function fecharModalDesconto() {
+      const modal = document.getElementById(MODAL_DOWNSELL_ID);
+      if (modal) {
+        modal.classList.add('hidden');
+      }
+    }
+
+    // 1. Marca que o usuário clicou no botão de checkout normal
+    document.querySelectorAll('.btn-checkout').forEach(btn => {
+      btn.addEventListener('click', () => {
+        sessionStorage.setItem('usuario_clicou_checkout', 'true');
+        try {
+          history.pushState({ foiParaCheckout: true }, '', window.location.href);
+        } catch(err) {}
+      });
+    });
+
+    // 2. Dispara quando o usuário clica em Voltar no navegador/celular
+    window.addEventListener('popstate', (e) => {
+      if (sessionStorage.getItem('usuario_clicou_checkout') === 'true') {
+        abrirModalDesconto();
+      }
+    });
+
+    // 3. Dispara quando o usuário retorna da aba da Wiapy
+    window.addEventListener('pageshow', (e) => {
+      if (sessionStorage.getItem('usuario_clicou_checkout') === 'true' && !sessionStorage.getItem('downsell_exibido')) {
+        setTimeout(abrirModalDesconto, 300);
+      }
+    });
+
+    // 4. Rastreamento de InitiateCheckout da oferta de R$ 18,90
+    if (BTN_CHECKOUT_PROMO) {
+      BTN_CHECKOUT_PROMO.addEventListener('click', () => {
+        if (typeof fbq === 'function') {
+          fbq('track', 'InitiateCheckout', {
+            content_name: 'Curso Alongamento de Unhas - 10 Certificados (Promo 18.90)',
+            value: 18.90,
+            currency: 'BRL'
+          });
+        }
+      });
+    }
+  </script>
+
 </body>
 </html>
