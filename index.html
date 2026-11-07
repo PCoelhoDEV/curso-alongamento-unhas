@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Método Oficial Nail Designer • Do Zero à Sua Primeira Cliente</title>
+  <meta name="description" content="Aprenda a aplicar unhas do absoluto zero, conquiste sua primeira cliente e receba 10 Certificados Oficiais com acesso vitalício.">
+
+  <!-- Pré-conexões de Ultra Velocidade -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+  <link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">
+
+  <!-- Fontes de Alta Legibilidade Mobile -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    window.CHECKOUT_URL = "https://pay.wiapy.com/c/vykpgbg";
+    window.PIXEL_ID = "1259068652092416";
+  </script>
+
+  <!-- Meta Pixel Code Oficial -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    if (window.PIXEL_ID) {
+      fbq('init', window.PIXEL_ID);
+      fbq('track', 'PageView');
+    }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            linen: '#FBF9F5',
+            sand: '#F5EFE6',
+            ink: '#1C120C',
+            espresso: '#2D1E16',
+            roseaccent: '#E65388',
+            rosesoft: '#FFF1F5',
+            roseborder: '#FAD2E1',
+            emeraldaccent: '#0E7048',
+            goldaccent: '#C59A45',
+            goldsoft: '#FAF3E3'
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * {
+      -webkit-tap-highlight-color: transparent;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FBF9F5;
+      color: #1C120C;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      width: 100%;
+    }
+    .font-serif {
+      font-family: 'Fraunces', serif;
+    }
+    .btn-apple-cta {
+      background: linear-gradient(180deg, #16A34A 0%, #15803D 100%);
+      box-shadow: 0 4px 18px rgba(22, 163, 74, 0.35);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-apple-cta:active {
+      transform: scale(0.98);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(229, 221, 213, 0.9);
+      box-shadow: 0 8px 24px -4px rgba(28, 18, 12, 0.04);
+    }
+
+    /* CARROSSEL INFINITO CONTÍNUO */
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 20s linear infinite;
+    }
+
+    /* ESTILO DO QUIZ MOBILE APP NATIVO */
+    .quiz-card-btn {
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1.5px solid #E5E0D8;
+    }
+    .quiz-card-btn:active {
+      transform: scale(0.97);
+    }
+    .quiz-card-btn.selected {
+      border-color: #E65388;
+      background-color: #FFF1F5;
+      box-shadow: 0 4px 14px rgba(230, 83, 136, 0.15);
+    }
+    .screen-fade {
+      animation: screenFade 0.28s ease-out forwards;
+    }
+    @keyframes screenFade {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="selection:bg-roseborder selection:text-ink">
+
+  <!-- ============================================================== -->
+  <!-- QUIZ 100% MOBILE-FIRST EM TELA CHEIA NATIVA (PADRÃO TIKTOK/META) -->
+  <!-- ============================================================== -->
+  <div id="quizOverlay" class="fixed inset-0 z-50 bg-linen flex flex-col justify-between overflow-y-auto">
+    
+    <!-- Top Header do Quiz (Estilo Stories / App Moderno) -->
+    <header class="w-full bg-white border-b border-neutral-200/80 px-4 py-3 sticky top-0 z-20 shadow-xs">
+      <div class="max-w-md mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-roseaccent animate-pulse"></span>
+          <span class="text-xs font-bold text-ink uppercase tracking-wider">Diagnóstico Oficial</span>
+        </div>
+        <span class="text-[11px] font-semibold text-neutral-400">1 min</span>
+      </div>
+
+      <!-- Barra de Progresso Suave -->
+      <div class="max-w-md mx-auto mt-2.5">
+        <div class="flex items-center justify-between text-[10px] font-bold text-neutral-400 mb-1">
+          <span id="quizStepLabel">PERGUNTA 1 DE 3</span>
+          <span id="quizProgressPercent" class="text-roseaccent font-mono">33%</span>
+        </div>
+        <div class="w-full h-1.5 bg-neutral-100 rounded-full overflow-hidden">
+          <div id="quizProgressBar" class="h-full bg-gradient-to-r from-roseaccent to-amber-500 rounded-full transition-all duration-300 w-1/3"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ÁREA DE CONTEÚDO CENTRALIZADA MOBILE (Encaixa na palma da mão) -->
+    <main class="w-full max-w-md mx-auto px-4 py-6 flex-1 flex flex-col justify-center">
+
+
+
+      <!-- ETAPA 1 -->
+            <!-- TELA DE MICRO-LOADING ULTRA VISÍVEL (SPINNER iOS + BARRA PULSANTE) -->
+      <div id="quizInterstitialLoading" class="space-y-5 text-center py-14 hidden screen-fade">
+        
+        <!-- Spinner SVG de Alta Visibilidade com Rotação Ativa -->
+        <div class="relative w-14 h-14 mx-auto flex items-center justify-center">
+          <svg class="animate-spin w-14 h-14 text-roseaccent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-20" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-90" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+          <span class="absolute text-lg animate-pulse">💅</span>
+        </div>
+
+        <div class="space-y-1.5">
+          <h4 id="interstitialTitle" class="font-serif text-xl font-bold text-ink leading-tight">
+            Processando resposta...
+          </h4>
+          <p id="interstitialSub" class="text-xs text-neutral-500 font-medium">
+            Calibrando as próximas perguntas para seu nível...
+          </p>
+        </div>
+
+        <!-- Indicador de Carregamento Ativo (Micro-Dots Animados) -->
+        <div class="flex items-center justify-center gap-1.5 pt-1">
+          <span class="w-2 h-2 rounded-full bg-roseaccent animate-bounce"></span>
+          <span class="w-2 h-2 rounded-full bg-roseaccent animate-bounce [animation-delay:0.2s]"></span>
+          <span class="w-2 h-2 rounded-full bg-roseaccent animate-bounce [animation-delay:0.4s]"></span>
+        </div>
+
+      </div>
+      <div id="quizStep1" class="space-y-4 screen-fade">
+        <div class="space-y-1.5">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-roseaccent bg-rosesoft px-2.5 py-1 rounded-full border border-roseborder">
+            Seu Momento Atual
+          </span>
+          <h2 class="font-serif text-2xl font-bold text-ink leading-tight">
+            Qual dessas frases mais combina com a sua realidade hoje?
+          </h2>
+          <p class="text-xs text-neutral-500">
+            Responda com sinceridade para calibrarmos o método certo:
+          </p>
+        </div>
+
+        <div class="space-y-2.5 pt-1">
+          <!-- OPÇÃO 1 -->
+          <div onclick="selecionarOpcao1('zero', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3.5">
+              <span class="text-2xl flex-shrink-0">🌱</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">Sou iniciante do absoluto zero</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Nunca peguei numa lixa, mas quero ter minha própria renda</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+
+          <!-- OPÇÃO 2 -->
+          <div onclick="selecionarOpcao1('tecnica', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3.5">
+              <span class="text-2xl flex-shrink-0">⏱️</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">Já tentei, mas quebra ou demoro muito</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Sofro com descolamento precoce ou levo 3h num atendimento</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+
+          <!-- OPÇÃO 3 -->
+          <div onclick="selecionarOpcao1('sem_clientes', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3.5">
+              <span class="text-2xl flex-shrink-0">📉</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">Já atendo, mas faltam clientes e certificado</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Cobro barato por vergonha e não consigo lotar a agenda</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ETAPA 2 (RAMIFICADA) -->
+      <div id="quizStep2" class="space-y-4 hidden screen-fade">
+        <div class="space-y-1.5">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-roseaccent bg-rosesoft px-2.5 py-1 rounded-full border border-roseborder">
+            O Ponto Crítico
+          </span>
+          <h2 id="step2Title" class="font-serif text-2xl font-bold text-ink leading-tight">
+            O que mais te impede de cobrar de R$ 100 a R$ 140 hoje?
+          </h2>
+          <p id="step2Subtitle" class="text-xs text-neutral-500">
+            Identificando a trava exata do seu faturamento:
+          </p>
+        </div>
+
+        <div id="step2OptionsContainer" class="space-y-2.5 pt-1">
+          <!-- Injetado dinamicamente -->
+        </div>
+      </div>
+
+      <!-- ETAPA 3 (OBJETIVO FINANCEIRO) -->
+      <div id="quizStep3" class="space-y-4 hidden screen-fade">
+        <div class="space-y-1.5">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-amber-700 bg-goldsoft px-2.5 py-1 rounded-full border border-amber-200">
+            Sua Meta de Faturamento
+          </span>
+          <h2 class="font-serif text-2xl font-bold text-ink leading-tight">
+            Quanto você quer colocar no bolso todo mês fazendo unhas?
+          </h2>
+          <p class="text-xs text-neutral-500">
+            Atendendo na mesa da sua casa ou no seu próprio cantinho:
+          </p>
+        </div>
+
+        <div class="space-y-2.5 pt-1">
+          <div onclick="selecionarOpcao3('1500', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3.5">
+              <span class="text-2xl flex-shrink-0">💵</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">R$ 1.500 a R$ 2.500 / mês</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Renda extra nos fins de semana para pagar contas</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+
+          <div onclick="selecionarOpcao3('3500', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3.5">
+              <span class="text-2xl flex-shrink-0">✨</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">R$ 3.000 a R$ 5.000 / mês</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Minha renda principal, sendo minha própria chefe</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+
+          <div onclick="selecionarOpcao3('6000', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3.5">
+              <span class="text-2xl flex-shrink-0">👑</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">Mais de R$ 6.000 / mês</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Abrir meu estúdio e virar referência na minha cidade</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TELA DE ANÁLISE / LOADING EM ETAPAS (ALTA RETENÇÃO & VALOR PERCEBIDO) -->
+      <div id="quizStepLoading" class="space-y-6 text-center py-6 hidden screen-fade">
+        <div class="relative w-16 h-16 mx-auto">
+          <div class="w-16 h-16 rounded-full border-4 border-rosesoft border-t-roseaccent animate-spin"></div>
+          <div class="absolute inset-0 flex items-center justify-center text-xl">
+            💅
+          </div>
+        </div>
+        
+        <div class="space-y-1.5">
+          <h3 id="loadingMainTitle" class="font-serif text-2xl font-bold text-ink leading-snug">
+            Montando Sua Estrutura...
+          </h3>
+          <p id="loadingStatusText" class="text-xs text-neutral-500 font-medium h-4 transition-all duration-300">
+            Cruzando respostas com o perfil de alunas que faturam...
+          </p>
+        </div>
+
+        <!-- Barra de Progresso Realista do Loading -->
+        <div class="w-full bg-neutral-100 rounded-full h-2 overflow-hidden border border-neutral-200">
+          <div id="loadingProgressInner" class="bg-gradient-to-r from-roseaccent via-amber-500 to-emerald-500 h-full w-0 transition-all duration-500 ease-out"></div>
+        </div>
+
+        <!-- Checklist Dinâmico que Acende um por Um -->
+        <div class="space-y-2.5 text-xs font-medium text-neutral-700 bg-white p-4 rounded-2xl border border-neutral-200 text-left shadow-xs">
+          <div id="checkRow1" class="flex items-center gap-2.5 text-neutral-400 transition-colors duration-400">
+            <span class="check-icon w-4 h-4 rounded-full border border-neutral-300 flex items-center justify-center text-[10px]"></span>
+            <span>Método Passo a Passo calibrado para sua meta</span>
+          </div>
+          <div id="checkRow2" class="flex items-center gap-2.5 text-neutral-400 transition-colors duration-400">
+            <span class="check-icon w-4 h-4 rounded-full border border-neutral-300 flex items-center justify-center text-[10px]"></span>
+            <span>Emissão dos <b>10 Certificados Oficiais</b> liberada</span>
+          </div>
+          <div id="checkRow3" class="flex items-center gap-2.5 text-neutral-400 transition-colors duration-400">
+            <span class="check-icon w-4 h-4 rounded-full border border-neutral-300 flex items-center justify-center text-[10px]"></span>
+            <span>Link Exclusivo de <b>Agendamentos no WhatsApp</b> gerado</span>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Rodapé Seguro do Quiz -->
+    <footer class="w-full max-w-md mx-auto p-4 text-center text-[10px] text-neutral-400">
+      🔒 Diagnóstico Seguro & Privado • Válido para 2026
+    </footer>
+
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- PÁGINA PRINCIPAL DE VENDAS (100% RESPONSIVA MOBILE-FIRST) -->
+  <!-- ============================================================== -->
+  
+  <!-- BARRA DE TOPO DISCRETA -->
+  <div class="bg-gradient-to-r from-espresso via-ink to-espresso text-linen text-xs font-medium py-2 px-3 text-center tracking-wide flex items-center justify-center gap-2 border-b border-white/10">
+    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+    <span><b>Método Oficial Nail Designer:</b> Do zero à 1ª cliente com <b>10 Certificados</b></span>
+  </div>
+
+  <!-- HERO SECTION -->
+  <header class="pt-8 pb-10 px-4 text-center">
+    <div class="max-w-md mx-auto">
+      
+      <!-- Selo de Autoridade -->
+      <div class="inline-flex items-center gap-2 bg-white border border-neutral-200 rounded-full py-1.5 px-3 shadow-xs mb-5">
+        <span class="flex -space-x-1.5">
+          <img src="img/ana.jpg" class="w-5 h-5 rounded-full object-cover border border-white">
+          <img src="img/bianca.jpg" class="w-5 h-5 rounded-full object-cover border border-white">
+          <img src="img/carla.jpg" class="w-5 h-5 rounded-full object-cover border border-white">
+        </span>
+        <span id="heroTargetBadge" class="text-[11px] font-semibold text-neutral-700">
+          Para quem quer começar do zero
+        </span>
+        <span class="text-amber-500 text-xs">★★★★★</span>
+      </div>
+
+      <!-- TÍTULO -->
+      <h1 class="font-serif text-3xl sm:text-4xl text-ink font-bold tracking-tight leading-tight mb-4">
+        Do Zero à Sua <br>
+        <em class="italic font-medium text-roseaccent not-italic bg-gradient-to-r from-roseaccent to-amber-600 bg-clip-text text-transparent">Primeira Cliente.</em>
+      </h1>
+
+      <!-- SUBTÍTULO -->
+      <p id="heroCustomSub" class="text-sm text-neutral-600 leading-relaxed mb-6">
+        Mesmo que você nunca tenha pegado numa lixa ou motor na vida. Aprenda as técnicas mais pedidas de mesa (Fibra, Gel na Tip e Molde F1) e tenha segurança para atender em casa.
+      </p>
+
+      <!-- BOTÃO QUE ROLA PARA BAIXO -->
+      <div class="space-y-3">
+        <button onclick="rolarParaOferta()" class="btn-apple-cta w-full py-4 rounded-2xl text-white font-bold text-base flex items-center justify-center gap-2 cursor-pointer shadow-lg">
+          <span id="heroButtonText">Quero Conquistar Minha Primeira Cliente</span>
+          <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </button>
+        <div class="flex items-center justify-center gap-3 text-[11px] text-neutral-500 font-medium">
+          <span>✓ 10 Certificados</span>
+          <span>✓ Passo a Passo</span>
+          <span>✓ Acesso Vitalício</span>
+        </div>
+      </div>
+
+      <!-- Mockup Hero -->
+      <div class="mt-8 rounded-2xl overflow-hidden shadow-xl border border-neutral-200 bg-white">
+        <img src="img/hero.jpg" alt="Alongamento de Unhas" class="w-full h-auto object-cover">
+      </div>
+
+    </div>
+  </header>
+
+  <!-- CARROSSEL CONTÍNUO AUTOMÁTICO EM UMA LINHA -->
+  <section class="py-6 bg-white border-y border-neutral-200/80 overflow-hidden">
+    <div class="max-w-md mx-auto px-4 mb-3 text-center">
+      <span class="text-[11px] font-bold uppercase tracking-wider text-neutral-400">
+        Técnicas inclusas no seu treinamento:
+      </span>
+    </div>
+
+    <div class="relative w-full overflow-hidden">
+      <div class="marquee-track flex gap-3 items-center">
+        <div class="w-48 h-32 flex-shrink-0 rounded-2xl overflow-hidden border border-neutral-200 shadow-xs relative">
+          <img src="img/tecnica-03.webp" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-xs font-bold font-serif">Fibra de Vidro Slim</span>
+          </div>
+        </div>
+        <div class="w-48 h-32 flex-shrink-0 rounded-2xl overflow-hidden border border-neutral-200 shadow-xs relative">
+          <img src="img/tecnica-04.webp" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-xs font-bold font-serif">Gel na Tip Clássico</span>
+          </div>
+        </div>
+        <div class="w-48 h-32 flex-shrink-0 rounded-2xl overflow-hidden border border-neutral-200 shadow-xs relative">
+          <img src="img/tecnica-08.webp" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-xs font-bold font-serif">Gel Moldado Escultural</span>
+          </div>
+        </div>
+        <div class="w-48 h-32 flex-shrink-0 rounded-2xl overflow-hidden border border-neutral-200 shadow-xs relative">
+          <img src="img/tecnica-09.webp" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-xs font-bold font-serif">Molde F1 (Dual Form)</span>
+          </div>
+        </div>
+        <div class="w-48 h-32 flex-shrink-0 rounded-2xl overflow-hidden border border-neutral-200 shadow-xs relative">
+          <img src="img/tecnica-10.webp" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-xs font-bold font-serif">Efeito Babyboomer</span>
+          </div>
+        </div>
+
+        <!-- Duplicados para Marquee Infinito -->
+        <div class="w-48 h-32 flex-shrink-0 rounded-2xl overflow-hidden border border-neutral-200 shadow-xs relative">
+          <img src="img/tecnica-03.webp" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-xs font-bold font-serif">Fibra de Vidro Slim</span>
+          </div>
+        </div>
+        <div class="w-48 h-32 flex-shrink-0 rounded-2xl overflow-hidden border border-neutral-200 shadow-xs relative">
+          <img src="img/tecnica-04.webp" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-xs font-bold font-serif">Gel na Tip Clássico</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATEMÁTICA DA PRIMEIRA CLIENTE -->
+  <section class="py-10 px-4 max-w-md mx-auto">
+    <div class="text-center mb-6">
+      <h2 class="font-serif text-2xl font-bold text-ink mb-1">
+        Você só precisa de <em class="italic text-roseaccent">uma cliente</em>
+      </h2>
+      <p class="text-xs text-neutral-500">Olhe a conta simples atendendo na mesa da sua casa:</p>
+    </div>
+
+    <div class="space-y-2.5">
+      <div class="p-4 rounded-2xl bg-white border border-neutral-200 flex items-center justify-between">
+        <div>
+          <div class="text-[10px] font-bold text-neutral-400 uppercase">Custo de Material / Unha</div>
+          <div class="text-xs text-neutral-500 mt-0.5">Gel, lixa e fibra por aplicação</div>
+        </div>
+        <div class="font-serif text-xl font-bold text-neutral-700">~ R$ 15</div>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-white border border-neutral-200 flex items-center justify-between">
+        <div>
+          <div class="text-[10px] font-bold text-neutral-400 uppercase">Preço Médio Cobrado</div>
+          <div class="text-xs text-neutral-500 mt-0.5">Aplicação inicial de Fibra de Vidro</div>
+        </div>
+        <div class="font-serif text-xl font-bold text-ink">R$ 100 a R$ 140</div>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-rosesoft border border-roseborder flex items-center justify-between">
+        <div>
+          <div class="text-[10px] font-bold text-roseaccent uppercase">Seu Lucro Líquido</div>
+          <div class="text-xs text-neutral-700 font-medium mt-0.5">Na sua primeira cliente o curso já se paga</div>
+        </div>
+        <div class="font-serif text-xl font-bold text-roseaccent">+ R$ 85 a R$ 125</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICADOS -->
+  <section class="py-10 px-4 bg-white border-y border-neutral-200">
+    <div class="max-w-md mx-auto space-y-4 text-center">
+      <span class="text-[10px] font-bold text-amber-800 bg-goldsoft px-3 py-1 rounded-full border border-amber-200">
+        Reconhecimento Válido
+      </span>
+      <h2 class="font-serif text-2xl font-bold text-ink">
+        10 Certificados Oficiais Inclusos
+      </h2>
+      <p class="text-xs text-neutral-500 leading-relaxed">
+        Para você emoldurar e colocar na sua parede ou postar no seu perfil, transmitindo total confiança para suas primeiras clientes agendarem com você.
+      </p>
+      <div class="rounded-2xl overflow-hidden shadow-md border border-neutral-200">
+        <img src="img/receber.webp" alt="Certificados de Conclusão" class="w-full h-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS EM CARROSSEL CONTÍNUO (1 ÚNICA LINHA INFINITA) -->
+  <section class="py-10 bg-white border-y border-neutral-200/80 overflow-hidden">
+    <div class="max-w-md mx-auto px-4 mb-4 text-center">
+      <span class="text-[10px] font-bold text-roseaccent bg-rosesoft px-3 py-1 rounded-full border border-roseborder uppercase tracking-wider">
+        Casos Reais de Sucesso
+      </span>
+      <h2 class="font-serif text-2xl font-bold text-ink mt-2">
+        Elas começaram do absoluto zero
+      </h2>
+      <p class="text-xs text-neutral-500 mt-0.5">Alunas que conquistaram seus 10 certificados e já estão atendendo:</p>
+    </div>
+
+    <!-- Marquee de Depoimentos em 1 Linha Contínua -->
+    <div class="relative w-full overflow-hidden">
+      <div class="marquee-track flex gap-4 items-stretch py-2">
+        
+        <!-- Depoimento 1 -->
+        <div class="w-72 flex-shrink-0 bg-linen rounded-2xl p-3 border border-neutral-200 shadow-sm flex flex-col">
+          <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-neutral-200">
+            <img src="img/depo-1.jpg" alt="Aluna com Certificado" class="w-full h-full object-cover">
+          </div>
+          <div class="flex items-center gap-2.5 mb-2">
+            <img src="img/juliana.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
+            <div>
+              <div class="text-xs font-bold text-ink">Juliana Freitas</div>
+              <div class="text-[10px] text-amber-500">★★★★★ <span class="text-neutral-400 font-medium">• 12 clientes fixas</span></div>
+            </div>
+          </div>
+          <p class="text-[11px] text-neutral-600 leading-snug italic">
+            "Comecei na mesa da cozinha com receio. Hoje atendo minhas próprias clientes e pago todas as minhas contas."
+          </p>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="w-72 flex-shrink-0 bg-linen rounded-2xl p-3 border border-neutral-200 shadow-sm flex flex-col">
+          <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-neutral-200">
+            <img src="img/depo-2.jpg" alt="Aluna com Certificado" class="w-full h-full object-cover">
+          </div>
+          <div class="flex items-center gap-2.5 mb-2">
+            <img src="img/mariana.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
+            <div>
+              <div class="text-xs font-bold text-ink">Mariana Siqueira</div>
+              <div class="text-[10px] text-amber-500">★★★★★ <span class="text-neutral-400 font-medium">• Começou do zero</span></div>
+            </div>
+          </div>
+          <p class="text-[11px] text-neutral-600 leading-snug italic">
+            "Nunca tinha pegado num motor na vida. As aulas passo a passo e os 10 certificados me deram toda a segurança."
+          </p>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="w-72 flex-shrink-0 bg-linen rounded-2xl p-3 border border-neutral-200 shadow-sm flex flex-col">
+          <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-neutral-200">
+            <img src="img/depo-3.jpg" alt="Aluna com Certificado" class="w-full h-full object-cover">
+          </div>
+          <div class="flex items-center gap-2.5 mb-2">
+            <img src="img/ana.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
+            <div>
+              <div class="text-xs font-bold text-ink">Ana Paula Dias</div>
+              <div class="text-[10px] text-amber-500">★★★★★ <span class="text-neutral-400 font-medium">• Retorno rápido</span></div>
+            </div>
+          </div>
+          <p class="text-[11px] text-neutral-600 leading-snug italic">
+            "Com apenas uma cliente que atendi no sábado já paguei o valor do curso todinho e sobrou lucro!"
+          </p>
+        </div>
+
+        <!-- Depoimento 4 -->
+        <div class="w-72 flex-shrink-0 bg-linen rounded-2xl p-3 border border-neutral-200 shadow-sm flex flex-col">
+          <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-neutral-200">
+            <img src="img/depo-4.jpg" alt="Aluna com Certificado" class="w-full h-full object-cover">
+          </div>
+          <div class="flex items-center gap-2.5 mb-2">
+            <img src="img/raquel.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
+            <div>
+              <div class="text-xs font-bold text-ink">Raquel Mendes</div>
+              <div class="text-[10px] text-amber-500">★★★★★ <span class="text-neutral-400 font-medium">• Certificados na parede</span></div>
+            </div>
+          </div>
+          <p class="text-[11px] text-neutral-600 leading-snug italic">
+            "Os 10 certificados emoldurados na minha parede mudaram tudo. As clientes entram e sentem muita firmeza!"
+          </p>
+        </div>
+
+        <!-- REPETIÇÃO PARA LOOPING INFINITO PERFEITO -->
+        <div class="w-72 flex-shrink-0 bg-linen rounded-2xl p-3 border border-neutral-200 shadow-sm flex flex-col">
+          <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-neutral-200">
+            <img src="img/depo-1.jpg" alt="Aluna com Certificado" class="w-full h-full object-cover">
+          </div>
+          <div class="flex items-center gap-2.5 mb-2">
+            <img src="img/juliana.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
+            <div>
+              <div class="text-xs font-bold text-ink">Juliana Freitas</div>
+              <div class="text-[10px] text-amber-500">★★★★★ <span class="text-neutral-400 font-medium">• 12 clientes fixas</span></div>
+            </div>
+          </div>
+          <p class="text-[11px] text-neutral-600 leading-snug italic">
+            "Comecei na mesa da cozinha com receio. Hoje atendo minhas próprias clientes e pago todas as minhas contas."
+          </p>
+        </div>
+
+        <div class="w-72 flex-shrink-0 bg-linen rounded-2xl p-3 border border-neutral-200 shadow-sm flex flex-col">
+          <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-neutral-200">
+            <img src="img/depo-2.jpg" alt="Aluna com Certificado" class="w-full h-full object-cover">
+          </div>
+          <div class="flex items-center gap-2.5 mb-2">
+            <img src="img/mariana.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
+            <div>
+              <div class="text-xs font-bold text-ink">Mariana Siqueira</div>
+              <div class="text-[10px] text-amber-500">★★★★★ <span class="text-neutral-400 font-medium">• Começou do zero</span></div>
+            </div>
+          </div>
+          <p class="text-[11px] text-neutral-600 leading-snug italic">
+            "Nunca tinha pegado num motor na vida. As aulas passo a passo e os 10 certificados me deram toda a segurança."
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE BÔNUS EXCLUSIVO DE AGENDAMENTO -->
+  <section class="py-10 px-4 max-w-md mx-auto">
+    <div class="rounded-3xl bg-gradient-to-b from-amber-500/10 via-white to-amber-500/5 border-2 border-amber-300 p-6 shadow-lg text-center relative overflow-hidden">
+      
+      <div class="absolute -right-10 -top-10 w-28 h-28 bg-amber-400/20 rounded-full blur-2xl"></div>
+
+      <span class="inline-block bg-gradient-to-r from-amber-600 to-amber-700 text-white text-[10px] font-extrabold uppercase tracking-wider py-1.5 px-3.5 rounded-full shadow-xs mb-3">
+        🎁 BÔNUS EXCLUSIVO INCLUSO (GRÁTIS HOJE)
+      </span>
+
+      <h3 class="font-serif text-2xl font-bold text-ink leading-tight">
+        Seu Link Profissional de Agendamento para Bio
+      </h3>
+      
+      <p class="text-xs text-neutral-600 mt-2 leading-relaxed">
+        Chega de perder cliente no WhatsApp porque demorou para responder. Você recebe seu próprio <b>link profissional para colocar na Bio do Instagram</b>.
+      </p>
+
+      <div class="my-5 p-4 rounded-2xl bg-white border border-amber-200/80 shadow-xs text-left space-y-2.5">
+        <div class="flex items-start gap-2.5">
+          <span class="text-emerald-600 text-sm font-bold">✓</span>
+          <p class="text-xs text-neutral-700"><b>A cliente escolhe o serviço e a data:</b> Aplicação, manutenção ou esmaltação.</p>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <span class="text-emerald-600 text-sm font-bold">✓</span>
+          <p class="text-xs text-neutral-700"><b>Cai direto no seu WhatsApp:</b> O pedido chega montado com horário e valor já combinado.</p>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <span class="text-emerald-600 text-sm font-bold">✓</span>
+          <p class="text-xs text-neutral-700"><b>Zero mensalidade:</b> Sem pagar R$ 50/mês para aplicativos de agendamento.</p>
+        </div>
+      </div>
+
+      <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-900 text-[11px] font-bold px-3 py-1.5 rounded-xl border border-amber-200">
+        <span>Vendido separadamente por <span class="line-through text-amber-700">R$ 97,00</span></span>
+        <span class="bg-emerald-600 text-white px-1.5 py-0.5 rounded text-[10px]">GRÁTIS HOJE</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OFERTA FINAL -->
+  <section id="oferta" class="py-12 px-4 bg-white border-t border-neutral-200">
+    <div class="max-w-md mx-auto text-center space-y-6">
+      
+      <div class="rounded-3xl bg-gradient-to-b from-linen via-white to-rosesoft/50 border-2 border-roseborder p-6 shadow-xl space-y-5">
+        
+        <span class="inline-block bg-gradient-to-r from-roseaccent to-amber-600 text-white text-[10px] font-bold uppercase tracking-wider py-1.5 px-3 rounded-full shadow-xs">
+          Acesso Completo + 10 Certificados + Bônus
+        </span>
+
+        <div>
+          <h3 class="font-serif text-2xl font-bold text-ink">
+            Método Oficial Nail Designer
+          </h3>
+          <p class="text-xs text-neutral-500 mt-1">Acesso vitalício sem mensalidades.</p>
+        </div>
+
+        <div>
+          <div class="text-xs text-neutral-400 line-through">De R$ 97,90 por apenas</div>
+          <div class="flex items-baseline justify-center gap-1 mt-1">
+            <span class="text-xl font-bold text-ink">R$</span>
+            <span class="font-serif text-5xl font-bold text-ink">24</span>
+            <span class="text-2xl font-bold text-ink">,90</span>
+          </div>
+          <div class="text-xs text-neutral-500 mt-1 font-medium">
+            ou 2x de R$ 12,90 no cartão de crédito
+          </div>
+        </div>
+
+        <div class="text-left space-y-2 bg-white/90 p-4 rounded-2xl border border-neutral-200 text-xs font-medium text-neutral-700">
+          <div>✓ Acesso completo ao método passo a passo</div>
+          <div>✓ <b>10 Certificados Oficiais Válidos</b> inclusos</div>
+          <div>✓ <b>[BÔNUS ESPECIAL] Link de Agendamento Profissional para Bio</b> (Economize R$ 97)</div>
+          <div>✓ Lista de materiais baratos para iniciantes</div>
+          <div>✓ Acesso vitalício a todo o material</div>
+          <div>✓ Garantia incondicional de 7 dias</div>
+        </div>
+
+        <a href="https://pay.wiapy.com/c/vykpgbg" class="btn-apple-cta btn-checkout block w-full py-4 rounded-2xl text-white font-bold text-base shadow-lg cursor-pointer">
+          SIM! QUERO MEUS 10 CERTIFICADOS POR R$ 24,90
+        </a>
+
+        <div class="flex items-center justify-center gap-3 text-[11px] text-neutral-400">
+          <span>🔒 Compra Segura</span>
+          <span>⚡ Liberação Imediata</span>
+          <span>🛡️ 7 Dias de Garantia</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 px-4 text-center text-[10px] text-neutral-400 border-t border-neutral-200">
+    © 2026 Método Oficial Nail Designer • Todos os direitos reservados.
+  </footer>
+
+  <!-- SCRIPT COMPLETO DO QUIZ E ROLAGEM -->
+  <script>
+    
+
+
+    let userProfile = { tipo: 'zero', dor: '', meta: '' };
+
+    function rolarParaOferta() {
+      document.getElementById('oferta').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function selecionarOpcao1(tipo, element) {
+      userProfile.tipo = tipo;
+
+      document.querySelectorAll('#quizStep1 .quiz-card-btn').forEach(el => {
+        el.classList.remove('selected');
+        el.querySelector('.check-circle').innerHTML = '';
+      });
+      element.classList.add('selected');
+      element.querySelector('.check-circle').innerHTML = '<span class="w-2.5 h-2.5 bg-roseaccent rounded-full"></span>';
+
+      // Mostra o loading por 2.2 segundos ANTES de ir para a Pergunta 2!
+      setTimeout(() => {
+        document.getElementById('quizStep1').classList.add('hidden');
+        const loader = document.getElementById('quizInterstitialLoading');
+        document.getElementById('interstitialTitle').innerText = "Registrando seu perfil...";
+        document.getElementById('interstitialSub').innerText = "Ajustando as próximas etapas para sua realidade...";
+        loader.classList.remove('hidden');
+
+        setTimeout(() => {
+          loader.classList.add('hidden');
+          carregarEtapa2(tipo);
+        }, 2200);
+      }, 250);
+    }
+
+    function carregarEtapa2(tipo) {
+      document.getElementById('quizStep1').classList.add('hidden');
+      document.getElementById('quizStep2').classList.remove('hidden');
+      document.getElementById('quizStepLabel').innerText = "PERGUNTA 2 DE 3";
+      document.getElementById('quizProgressPercent').innerText = "66%";
+      document.getElementById('quizProgressBar').style.width = "66%";
+
+      const container = document.getElementById('step2OptionsContainer');
+      const title = document.getElementById('step2Title');
+      const subtitle = document.getElementById('step2Subtitle');
+
+      container.innerHTML = '';
+
+      if (tipo === 'sem_clientes') {
+        title.innerText = "Hoje, o que mais te impede de cobrar de R$ 100 a R$ 140 por cliente?";
+        subtitle.innerText = "Vamos resolver esse gargalo de autoridade e faturamento:";
+
+        container.innerHTML = `
+          <div onclick="selecionarOpcao2('falta_certificado', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl flex-shrink-0">📜</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">Não tenho certificados oficiais para expor</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">As clientes acham que sou amadora e pedem desconto</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+
+          <div onclick="selecionarOpcao2('agenda_vazia', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl flex-shrink-0">📅</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">Não sei como atrair clientes e lotar agenda</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Fico esperando indicação e perco clientes no WhatsApp</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+
+          <div onclick="selecionarOpcao2('cobro_barato', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl flex-shrink-0">💸</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">Cobro barato (R$ 40 a R$ 60) e me canso à toa</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Quero clientes que valorizam e pagam R$ 120 sem reclamar</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+        `;
+      } else if (tipo === 'tecnica') {
+        title.innerText = "Qual é o seu maior pesadelo durante o atendimento?";
+        subtitle.innerText = "Selecione o ponto que mais te gera insegurança:";
+
+        container.innerHTML = `
+          <div onclick="selecionarOpcao2('descolamento', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl flex-shrink-0">⚠️</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">A unha descola ou quebra antes de 15 dias</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Medo da cliente reclamar ou pedir dinheiro de volta</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+
+          <div onclick="selecionarOpcao2('tempo_demorado', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl flex-shrink-0">⌛</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">Demoro 3 a 4 horas em um único procedimento</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Costas doendo e perco dinheiro atendendo pouca gente</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+
+          <div onclick="selecionarOpcao2('acabamento_grosso', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl flex-shrink-0">💅</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">Unha fica grossa ou sem curvatura C</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Quero o acabamento europeu fino e natural</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+        `;
+      } else {
+        // TIPO ZERO
+        title.innerText = "O que mais te dá medo ao pensar em começar hoje?";
+        subtitle.innerText = "Vamos desarmar esse medo com o método passo a passo:";
+
+        container.innerHTML = `
+          <div onclick="selecionarOpcao2('medo_inseguranca', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl flex-shrink-0">😰</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">Medo de não ter coordenação motora</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Nunca mexi com isso e tenho receio de achar difícil</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+
+          <div onclick="selecionarOpcao2('sem_dinheiro_materiais', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl flex-shrink-0">💰</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">Achar que precisa de materiais caros</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Não sei quais marcas baratas comprar para não errar</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+
+          <div onclick="selecionarOpcao2('como_comecar_casa', this)" class="quiz-card-btn p-4 rounded-2xl bg-white flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl flex-shrink-0">🏠</span>
+              <div class="text-left">
+                <div class="font-bold text-sm text-ink leading-snug">Não ter salão nem saber atrair clientes</div>
+                <div class="text-[11px] text-neutral-500 mt-0.5">Quero saber como começar na mesa de casa e fechar agendamentos</div>
+              </div>
+            </div>
+            <div class="w-5 h-5 rounded-full border-2 border-neutral-300 flex-shrink-0 flex items-center justify-center check-circle"></div>
+          </div>
+        `;
+      }
+    }
+
+    function selecionarOpcao2(dor, element) {
+      userProfile.dor = dor;
+
+      document.querySelectorAll('#step2OptionsContainer .quiz-card-btn').forEach(el => {
+        el.classList.remove('selected');
+        el.querySelector('.check-circle').innerHTML = '';
+      });
+      element.classList.add('selected');
+      element.querySelector('.check-circle').innerHTML = '<span class="w-2.5 h-2.5 bg-roseaccent rounded-full"></span>';
+
+      // Mostra tela de Micro-Loading entre P2 e P3 (2.2s de valor percebido)
+      setTimeout(() => {
+        document.getElementById('quizStep2').classList.add('hidden');
+        const loader = document.getElementById('quizInterstitialLoading');
+        document.getElementById('interstitialTitle').innerText = "Identificando o gargalo exato...";
+        document.getElementById('interstitialSub').innerText = "Mapeando o módulo prático de destrave para sua agenda...";
+        loader.classList.remove('hidden');
+
+        setTimeout(() => {
+          loader.classList.add('hidden');
+          document.getElementById('quizStep3').classList.remove('hidden');
+          document.getElementById('quizStepLabel').innerText = "PERGUNTA 3 DE 3";
+          document.getElementById('quizProgressPercent').innerText = "90%";
+          document.getElementById('quizProgressBar').style.width = "90%";
+        }, 2200);
+      }, 250);
+    }
+
+    function selecionarOpcao3(meta, element) {
+      userProfile.meta = meta;
+
+      document.querySelectorAll('#quizStep3 .quiz-card-btn').forEach(el => el.classList.remove('selected'));
+      element.classList.add('selected');
+      element.querySelector('.check-circle').innerHTML = '<span class="w-2.5 h-2.5 bg-roseaccent rounded-full"></span>';
+
+      setTimeout(() => {
+        document.getElementById('quizStep3').classList.add('hidden');
+        document.getElementById('quizStepLoading').classList.remove('hidden');
+        document.getElementById('quizStepLabel').innerText = "ANALISANDO SEU PERFIL...";
+        document.getElementById('quizProgressPercent').innerText = "95%";
+        document.getElementById('quizProgressBar').style.width = "95%";
+
+        const bar = document.getElementById('loadingProgressInner');
+        const statusTxt = document.getElementById('loadingStatusText');
+        const row1 = document.getElementById('checkRow1');
+        const row2 = document.getElementById('checkRow2');
+        const row3 = document.getElementById('checkRow3');
+
+        // Etapa 1 do Loading (0s a 1.2s)
+        bar.style.width = "35%";
+        statusTxt.innerText = "Cruzando respostas e histórico de procedimentos...";
+        
+        setTimeout(() => {
+          // Etapa 2 do Loading (1.2s a 2.4s)
+          bar.style.width = "65%";
+          statusTxt.innerText = "Liberando grade com 10 Certificados Oficiais...";
+          row1.classList.remove('text-neutral-400');
+          row1.classList.add('text-emerald-700', 'font-semibold');
+          row1.querySelector('.check-icon').innerHTML = "✓";
+          row1.querySelector('.check-icon').classList.add('bg-emerald-100', 'text-emerald-600', 'border-emerald-300');
+        }, 1300);
+
+        setTimeout(() => {
+          // Etapa 3 do Loading (2.4s a 3.6s)
+          bar.style.width = "88%";
+          statusTxt.innerText = "Configurando seu Link de Agendamento Profissional...";
+          row2.classList.remove('text-neutral-400');
+          row2.classList.add('text-emerald-700', 'font-semibold');
+          row2.querySelector('.check-icon').innerHTML = "✓";
+          row2.querySelector('.check-icon').classList.add('bg-emerald-100', 'text-emerald-600', 'border-emerald-300');
+        }, 2600);
+
+        setTimeout(() => {
+          // Etapa 4 do Loading - Conclusão (3.6s a 4.5s)
+          bar.style.width = "100%";
+          document.getElementById('loadingMainTitle').innerText = "Plano Completo Liberado!";
+          statusTxt.innerText = "Pronto! Redirecionando para a sua apresentação exclusiva...";
+          row3.classList.remove('text-neutral-400');
+          row3.classList.add('text-emerald-700', 'font-semibold');
+          row3.querySelector('.check-icon').innerHTML = "✓";
+          row3.querySelector('.check-icon').classList.add('bg-emerald-100', 'text-emerald-600', 'border-emerald-300');
+        }, 3800);
+
+        // Redireciona para a página oficial com transição suave
+        setTimeout(() => {
+          document.getElementById('quizOverlay').classList.add('hidden');
+        }, 4600);
+
+      }, 400);
+    }
+
+    function pularQuiz() {
+      document.getElementById('quizOverlay').classList.add('hidden');
+    }
+
+    document.querySelectorAll('.btn-checkout').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (typeof fbq === 'function') {
+          fbq('track', 'InitiateCheckout', {
+            content_name: 'Curso Alongamento de Unhas - 10 Certificados',
+            value: 19.90,
+            currency: 'BRL'
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
