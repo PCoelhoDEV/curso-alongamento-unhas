@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
-  <link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="img/hero.webp" type="image/webp" fetchpriority="high">
 
   <!-- Fontes de Alta Legibilidade Mobile -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -36,6 +36,7 @@
       fbq('track', 'PageView');
     }
   </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1259068652092416&ev=PageView&noscript=1"/></noscript>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -395,9 +396,9 @@
       <!-- Selo de Autoridade -->
       <div class="inline-flex items-center gap-2 bg-white border border-neutral-200 rounded-full py-1.5 px-3 shadow-xs mb-5">
         <span class="flex -space-x-1.5">
-          <img src="img/ana.jpg" class="w-5 h-5 rounded-full object-cover border border-white">
-          <img src="img/bianca.jpg" class="w-5 h-5 rounded-full object-cover border border-white">
-          <img src="img/carla.jpg" class="w-5 h-5 rounded-full object-cover border border-white">
+          <img src="img/ana.webp" loading="lazy" decoding="async" class="w-5 h-5 rounded-full object-cover border border-white">
+          <img src="img/bianca.webp" loading="lazy" decoding="async" class="w-5 h-5 rounded-full object-cover border border-white">
+          <img src="img/carla.webp" loading="lazy" decoding="async" class="w-5 h-5 rounded-full object-cover border border-white">
         </span>
         <span id="heroTargetBadge" class="text-[11px] font-semibold text-neutral-700">
           Para quem quer começar do zero
@@ -431,7 +432,7 @@
 
       <!-- Mockup Hero -->
       <div class="mt-8 rounded-2xl overflow-hidden shadow-xl border border-neutral-200 bg-white">
-        <img src="img/hero.jpg" alt="Alongamento de Unhas" class="w-full h-auto object-cover">
+        <img src="img/hero.webp" alt="Alongamento de Unhas" class="w-full h-auto object-cover" fetchpriority="high" decoding="async" width="720" height="900">
       </div>
 
     </div>
@@ -796,10 +797,10 @@
         <!-- Depoimento 1 -->
         <div class="w-72 flex-shrink-0 bg-linen rounded-2xl p-3 border border-neutral-200 shadow-sm flex flex-col">
           <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-neutral-200">
-            <img src="img/depo-1.jpg" alt="Aluna com Certificado" class="w-full h-full object-cover">
+            <img src="img/depo-1.webp" loading="lazy" decoding="async" alt="Aluna com Certificado" class="w-full h-full object-cover">
           </div>
           <div class="flex items-center gap-2.5 mb-2">
-            <img src="img/juliana.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
+            <img src="img/juliana.webp" loading="lazy" decoding="async" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
             <div>
               <div class="text-xs font-bold text-ink">Juliana Freitas</div>
               <div class="text-[10px] text-amber-500">★★★★★ <span class="text-neutral-400 font-medium">• 12 clientes fixas</span></div>
@@ -813,10 +814,10 @@
         <!-- Depoimento 2 -->
         <div class="w-72 flex-shrink-0 bg-linen rounded-2xl p-3 border border-neutral-200 shadow-sm flex flex-col">
           <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-neutral-200">
-            <img src="img/depo-2.jpg" alt="Aluna com Certificado" class="w-full h-full object-cover">
+            <img src="img/depo-2.webp" loading="lazy" decoding="async" alt="Aluna com Certificado" class="w-full h-full object-cover">
           </div>
           <div class="flex items-center gap-2.5 mb-2">
-            <img src="img/mariana.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
+            <img src="img/mariana.webp" loading="lazy" decoding="async" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
             <div>
               <div class="text-xs font-bold text-ink">Mariana Siqueira</div>
               <div class="text-[10px] text-amber-500">★★★★★ <span class="text-neutral-400 font-medium">• Começou do zero</span></div>
@@ -830,10 +831,10 @@
         <!-- Depoimento 3 -->
         <div class="w-72 flex-shrink-0 bg-linen rounded-2xl p-3 border border-neutral-200 shadow-sm flex flex-col">
           <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-neutral-200">
-            <img src="img/depo-3.jpg" alt="Aluna com Certificado" class="w-full h-full object-cover">
+            <img src="img/depo-3.webp" loading="lazy" decoding="async" alt="Aluna com Certificado" class="w-full h-full object-cover">
           </div>
           <div class="flex items-center gap-2.5 mb-2">
-            <img src="img/ana.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
+            <img src="img/ana.webp" loading="lazy" decoding="async" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
             <div>
               <div class="text-xs font-bold text-ink">Ana Paula Dias</div>
               <div class="text-[10px] text-amber-500">★★★★★ <span class="text-neutral-400 font-medium">• Retorno rápido</span></div>
@@ -847,10 +848,10 @@
         <!-- Depoimento 4 -->
         <div class="w-72 flex-shrink-0 bg-linen rounded-2xl p-3 border border-neutral-200 shadow-sm flex flex-col">
           <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-neutral-200">
-            <img src="img/depo-4.jpg" alt="Aluna com Certificado" class="w-full h-full object-cover">
+            <img src="img/depo-4.webp" loading="lazy" decoding="async" alt="Aluna com Certificado" class="w-full h-full object-cover">
           </div>
           <div class="flex items-center gap-2.5 mb-2">
-            <img src="img/raquel.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
+            <img src="img/raquel.webp" loading="lazy" decoding="async" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
             <div>
               <div class="text-xs font-bold text-ink">Raquel Mendes</div>
               <div class="text-[10px] text-amber-500">★★★★★ <span class="text-neutral-400 font-medium">• Certificados na parede</span></div>
@@ -864,10 +865,10 @@
         <!-- REPETIÇÃO PARA LOOPING INFINITO PERFEITO -->
         <div class="w-72 flex-shrink-0 bg-linen rounded-2xl p-3 border border-neutral-200 shadow-sm flex flex-col">
           <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-neutral-200">
-            <img src="img/depo-1.jpg" alt="Aluna com Certificado" class="w-full h-full object-cover">
+            <img src="img/depo-1.webp" loading="lazy" decoding="async" alt="Aluna com Certificado" class="w-full h-full object-cover">
           </div>
           <div class="flex items-center gap-2.5 mb-2">
-            <img src="img/juliana.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
+            <img src="img/juliana.webp" loading="lazy" decoding="async" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
             <div>
               <div class="text-xs font-bold text-ink">Juliana Freitas</div>
               <div class="text-[10px] text-amber-500">★★★★★ <span class="text-neutral-400 font-medium">• 12 clientes fixas</span></div>
@@ -880,10 +881,10 @@
 
         <div class="w-72 flex-shrink-0 bg-linen rounded-2xl p-3 border border-neutral-200 shadow-sm flex flex-col">
           <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-neutral-200">
-            <img src="img/depo-2.jpg" alt="Aluna com Certificado" class="w-full h-full object-cover">
+            <img src="img/depo-2.webp" loading="lazy" decoding="async" alt="Aluna com Certificado" class="w-full h-full object-cover">
           </div>
           <div class="flex items-center gap-2.5 mb-2">
-            <img src="img/mariana.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
+            <img src="img/mariana.webp" loading="lazy" decoding="async" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs">
             <div>
               <div class="text-xs font-bold text-ink">Mariana Siqueira</div>
               <div class="text-[10px] text-amber-500">★★★★★ <span class="text-neutral-400 font-medium">• Começou do zero</span></div>
@@ -1352,7 +1353,22 @@
         }
       });
     });
+    // Encaminha parâmetros de URL (UTMs) para os botões da Wiapy
+    (function forwardUTMs() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.toString()) {
+        document.querySelectorAll('.btn-checkout, a[href*="pay.wiapy.com"]').forEach(a => {
+          try {
+            const dest = new URL(a.href);
+            urlParams.forEach((v, k) => dest.searchParams.set(k, v));
+            if (!dest.searchParams.has('src') && urlParams.has('utm_source')) {
+              dest.searchParams.set('src', urlParams.get('utm_source'));
+            }
+            a.href = dest.toString();
+          } catch(e) {}
+        });
+      }
+    })();
   </script>
-
 </body>
 </html>
